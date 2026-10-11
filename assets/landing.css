@@ -1,0 +1,254 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #eeeeee;
+    font-family: Georgia, serif;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.95);
+    border-bottom: 1px solid #333333;
+}
+
+.navbar-brand {
+    color: #eeeeee !important;
+    letter-spacing: 3px;
+}
+
+.nav-link {
+    color: #cccccc !important;
+}
+
+.nav-link:hover {
+    color: #c73535 !important;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.92)
+        ),
+        radial-gradient(
+            circle at 70% 30%,
+            #4b1717,
+            #151515 40%,
+            #050505 75%
+        );
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #c73535;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+
+.hero-text > p:not(.small-title) {
+    font-size: 18px;
+    color: #cccccc;
+    line-height: 1.7;
+}
+
+.cover-card {
+    width: 360px;
+    max-width: 100%;
+    margin: auto;
+    background: #000000;
+    border: 1px solid #5b2525;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.cover-card img {
+    width: 120%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-left: -10%;
+    background: #000000;
+}
+
+.cover-content {
+    padding: 20px;
+    text-align: center;
+    background: #111111;
+}
+
+.cover-content h2 {
+    color: #d13a3a;
+    letter-spacing: 4px;
+    font-size: 24px;
+}
+
+.cover-content p {
+    color: #999999;
+    margin: 0;
+}
+
+.features {
+    background: #101010;
+}
+
+.features h2,
+.lore h2,
+.about h2 {
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+
+.feature-box {
+    height: 100%;
+    min-height: 180px;
+    padding: 35px 25px;
+    text-align: center;
+    background: #181818;
+    border: 1px solid #333333;
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-box:hover {
+    border-color: #a52d2d;
+    transform: translateY(-5px);
+}
+
+.feature-box h3 {
+    color: #d63b3b;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.feature-box p {
+    color: #aaaaaa;
+    max-width: 280px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.lore {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.9)
+        ),
+        radial-gradient(
+            circle at 80% 50%,
+            #401b1b,
+            #111111 45%,
+            #050505
+        );
+}
+
+.lore p:not(.small-title) {
+    color: #bbbbbb;
+    line-height: 1.7;
+}
+
+.about {
+    background: #151515;
+}
+
+.about p:not(.small-title) {
+    max-width: 600px;
+    margin: 20px auto 30px;
+    color: #aaaaaa;
+}
+
+.btn-danger {
+    background: #a82d2d;
+    border-color: #a82d2d;
+}
+
+.btn-danger:hover {
+    background: #c43a3a;
+    border-color: #c43a3a;
+}
+
+footer {
+    background: #070707;
+    border-top: 1px solid #292929;
+}
+
+footer h5 {
+    letter-spacing: 4px;
+}
+
+footer p {
+    color: #888888;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .hero-text {
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+        letter-spacing: 4px;
+    }
+
+    .hero-text > p:not(.small-title) {
+        font-size: 16px;
+    }
+
+    .cover-card {
+        width: 320px;
+        max-width: 100%;
+    }
+
+    .cover-card img {
+        width: 120%;
+        height: 410px;
+        margin-left: -10%;
+    }
+
+    .features h2,
+    .lore h2,
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .small-title {
+        letter-spacing: 3px;
+    }
+}

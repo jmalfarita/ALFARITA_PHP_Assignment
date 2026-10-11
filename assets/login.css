@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    color: #eeeeee;
+
+    background:
+        linear-gradient(
+            rgba(10, 8, 7, 0.70),
+            rgba(10, 8, 7, 0.85)
+        ),
+        url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main Login/Register Box */
+
+.container {
+    width: 100%;
+    max-width: 430px;
+
+    padding: 40px;
+
+    background: rgba(15, 13, 12, 0.90);
+
+    border: 1px solid #6e604c;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Symbol */
+
+.symbol {
+    text-align: center;
+
+    font-size: 42px;
+
+    color: #c49a5a;
+
+    margin-bottom: 10px;
+}
+
+/* Title */
+
+h1 {
+    text-align: center;
+
+    font-size: 28px;
+
+    letter-spacing: 4px;
+
+    color: #d5c29b;
+
+    margin-bottom: 8px;
+
+    text-transform: uppercase;
+}
+
+/* Description */
+
+.subtitle {
+    text-align: center;
+
+    color: #999999;
+
+    font-size: 13px;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 1px;
+}
+
+/* Form */
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+/* Labels */
+
+label {
+    font-size: 13px;
+
+    color: #c9b997;
+
+    margin-bottom: -8px;
+}
+
+/* Text Fields */
+
+input {
+    width: 100%;
+
+    padding: 13px;
+
+    background: #211e1a;
+
+    border: 1px solid #4d4539;
+
+    color: white;
+
+    outline: none;
+
+    font-family: Georgia, serif;
+}
+
+input:focus {
+    border-color: #b18a52;
+}
+
+/* Remember Me + Forgot Password */
+
+.options {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 12px;
+
+    color: #999999;
+}
+
+.options a,
+.bottom a {
+    color: #c49a5a;
+
+    text-decoration: none;
+}
+
+.options a:hover,
+.bottom a:hover {
+    text-decoration: underline;
+}
+
+.remember {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin: 0;
+}
+
+.remember input {
+    width: auto;
+}
+
+/* Button */
+
+button {
+    margin-top: 8px;
+
+    padding: 13px;
+
+    border: 1px solid #b18a52;
+
+    background: #8a683b;
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #a27b47;
+}
+
+/* Bottom Text */
+
+.bottom {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #999999;
+
+    font-size: 13px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 30px 22px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+}
